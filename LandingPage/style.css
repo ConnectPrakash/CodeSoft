@@ -1,0 +1,493 @@
+/* General styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    height: 50px;
+}
+
+.nav-bar h2 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.list-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.list-items li {
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 2px;
+}
+.list-items li a{
+   text-decoration: none;
+   color:white;
+}
+
+i {
+    margin: 2px;
+}
+
+.list-items li:hover {
+    text-decoration: underline;
+}
+
+.body {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 95vh;
+    color: white;
+}
+
+.body h3 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: aliceblue;
+    text-shadow: 0 0 10px #333;
+}
+
+.body button {
+    padding: 10px 20px;
+    font-size: 2em;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.body button:hover {
+    background-color: #555;
+}
+
+.background-blur {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('./Web-Programmer-Tallents-1.jpg') no-repeat center center/cover;
+    filter: blur(6px);
+    z-index: 0;
+}
+
+img {
+    width: 500px;
+    height: 700px;
+    right: 20px;
+}
+
+.second-div img {
+    width: 500px;
+    height: 400px;
+    right: 20px;
+}
+
+.second-div {
+    margin-top: 10px;
+    background-color: #555;
+    box-shadow: 2px 3px 2px 3px black;
+    margin-bottom: 0px;
+}
+
+.second-div .div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+.second-div h2 {
+    font-size: 50px;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.second-div p {
+    text-align: left;
+    line-height: 2;
+    width: 500px;
+    height: 100px;
+    font-size: 20px;
+    color:white;
+}
+
+.second-div div button {
+    font-size: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  margin-top: 50px;
+    
+  
+    
+}
+.second-div button:hover{
+    font-size: 22px;
+    background-color: #574f4f;
+}
+
+.bar-code {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 20px;
+    height: 100px;
+    text-align: center;
+    background-color: #555;
+    color: aliceblue;
+    align-items: center;
+    box-shadow: 3px 3px 3px 3px black;
+}
+
+.bar-code p {
+    transition: 0.5s;
+}
+
+.bar-code i {
+    margin: 5px;
+}
+
+.bar-code p:hover {
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+/* Third-div styles */
+/* Third-div styles */
+.third-div {
+    width: 100%;
+    background-color: #a4a3a3;
+    text-align: center;
+    margin: 0px;
+}
+
+.third-div h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.third-div .items {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+.third-div .items div {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.third-div .items div img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.third-div .items div a {
+    display: block;
+    padding: 10px;
+  
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+
+
+.third-div .items div ul {
+    list-style: none;
+    padding: 5px;
+
+}
+
+.third-div .items div ul li {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.third-div .items div button{
+    background-color: rgb(30, 146, 30);
+    color:black;
+    border-radius: 20px;
+    margin-bottom:5px;
+    transition: 0.2s;
+}
+.third-div .items div button:hover{
+    background-color: rgb(135, 189, 135);
+    font-size: 15px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .nav-bar h2 {
+        font-size: 30px;
+    }
+    
+    .body h3 {
+        font-size: 3em;
+    }
+
+    .body button {
+        font-size: 1.5em;
+    }
+    
+    img {
+        width: 400px;
+        height: 600px;
+    }
+
+    .second-div img {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .list-items {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .list-items li {
+        margin: 10px 0;
+    }
+    
+    .body {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .body h3 {
+        font-size: 2em;
+    }
+
+    .body button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+    
+    img {
+        width: 300px;
+        height: 500px;
+    }
+
+    .second-div {
+        margin-top: 50px;
+    }
+
+    .second-div .div {
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .second-div p {
+        width: 90%;
+        height: auto;
+    }
+
+    .second-div img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .bar-code {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar h2 {
+        font-size: 24px;
+    }
+    
+    .body h3 {
+        font-size: 1.5em;
+    }
+
+    .body button {
+        font-size: 0.8em;
+        padding: 6px 12px;
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .second-div .div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second-div button {
+        font-size: 18px;
+        padding: 8px;
+        margin-bottom: 50px;
+    }
+
+    .second-div img {
+        width: 100%;
+        height: auto;
+    }
+
+    .bar-code {
+        grid-template-columns: auto
+    }
+    /* General styles for the contact page */
+}
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+   
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact h1 {
+    text-align: center;
+    color: #0c0c0c;
+    font-size: 40px;
+}
+
+.contact .contact-form, .contact-info {
+    margin: 20px 0;
+}
+
+.contact .contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact .contact-form input, .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact .contact-form button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact .contact-form button:hover {
+    background-color: #555;
+}
+
+.contact .contact-info {
+    text-align: center;
+}
+
+.contact .contact-info h2 {
+    color: #0d0d0d;
+}
+
+.contact .contact-info p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.contact .contact-info i {
+    margin-right: 10px;
+}
+
+.contact .social-media a {
+    margin: 0 10px;
+    font-size: 1.5em;
+    color: #faf8f8;
+    text-decoration: none;
+}
+
+.contact .social-media a:hover {
+    color: #555;
+}
+.contact img{
+    height: 800px;
+}
+.contact #image{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url('./meeting-cyp-2.jpg') no-repeat center center/cover;
+    filter: blur(6px);
+    z-index: -1;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    .contact {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 0.9em;
+    }
+
+    .contact-form button {
+        font-size: 0.9em;
+    }
+
+    .contact-info p {
+        font-size: 0.9em;
+    }
+}
