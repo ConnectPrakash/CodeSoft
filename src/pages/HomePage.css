@@ -1,0 +1,39 @@
+/* HomePage.css */
+
+.container {
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    width:100%;
+    
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .container h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .link {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  /* You can add more styles as needed */
+  
